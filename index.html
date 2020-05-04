@@ -3,7 +3,6 @@
 <head>
 
     <link rel="stylesheet" type="text/css" href="css.css">
-    <script src="js.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TARGET PRACTICE</title>
@@ -17,22 +16,23 @@
     
     <table>
     <tr>
-        <td><img src="aim.png" alt="aim" onmousedown="score()" height="50px"></td>
-        <td><img src="aim.png" alt="aim" onmousedown="score()" height="50px"></td>
-        <td><img src="aim.png" alt="aim" onmousedown="score()" height="50px"></td>
+        <td><img id="1" class="aim hide" src="aim.png" alt="aim" onmousedown="score(this.id)" height="50px"></td>
+        <td><img id="2" class="aim hide" src="aim.png" alt="aim" onmousedown="score(this.id)" height="50px"></td>
+        <td><img id="3" class="aim hide" src="aim.png" alt="aim" onmousedown="score(this.id)" height="50px"></td>
     </tr>
     <tr>
-        <td><img src="aim.png" alt="aim" onmousedown="score()" height="50px"></td>
-        <td><img src="aim.png" alt="aim" onmousedown="score()" height="50px"></td>
-        <td><img src="aim.png" alt="aim" onmousedown="score()" height="50px"></td>
+        <td><img id="4" class="aim hide" src="aim.png" alt="aim" onmousedown="score(this.id)" height="50px"></td>
+        <td><img id="5" class="aim hide" src="aim.png" alt="aim" onmousedown="score(this.id)" height="50px"></td>
+        <td><img id="6" class="aim hide" src="aim.png" alt="aim" onmousedown="score(this.id)" height="50px"></td>
     </tr>
     <tr>
-        <td><img src="aim.png" alt="aim" onmousedown="score()" height="50px"></td>
-        <td><img src="aim.png" alt="aim" onmousedown="score()" height="50px"></td>
-        <td><img id="1" class="hide" src="aim.png" alt="aim" onmousedown="score()" height="50px"></td>
+        <td><img id="7" class="aim hide" src="aim.png" alt="aim" onmousedown="score(this.id)" height="50px"></td>
+        <td><img id="8" class="aim hide" src="aim.png" alt="aim" onmousedown="score(this.id)" height="50px"></td>
+        <td><img id="9" class="aim hide" src="aim.png" alt="aim" onmousedown="score(this.id)" height="50px"></td>
     </tr>
     </table>
-<!--    <script>
+    <!-- 
+        //appear and disappear without interacting
         setTimeout(appear, 500);
         function appear(){
         document.getElementById('1').classList.remove('hide');
@@ -42,13 +42,14 @@
         document.getElementById('1').className += ' hide';
         }
 
-    var a = 0;
-    console.log(a);
-
-    function score () {
-    document.getElementById("score").innerHTML = a+=1;
-    document.getElementById("1").classList.add('hide');
-    }
-    </script>-->
+        //score counter
+        var a = 0;
+        console.log(a);
+        function score () {
+        document.getElementById("score").innerHTML = a+=1;
+        document.getElementsByClassName("aim").classList.add('hide');
+        }>
+    -->
+    <script src="js.js"></script> <!--w headdzie jak jest to nie działa, dalczego??-->
 </body>
 </html>

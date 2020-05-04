@@ -12,14 +12,11 @@ img {
 
 th, td {
     padding: 100px;
-    border: 5px solid black; 
-    vertical-align: middle;
     text-align: center;
 }
 
-table {
-    width: 100%;
+/*table {
     height: 100%;
     border: 5px solid black; 
     border-collapse: collapse;
-}
+}*/
