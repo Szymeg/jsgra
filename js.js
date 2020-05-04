@@ -21,6 +21,8 @@ id_list.forEach(element => {
     
 });
 
+//to do: show each img individually
+
 /*appear and disappear without interacting
 setTimeout(appear, 500);
     function appear(){
@@ -29,7 +31,8 @@ setTimeout(appear, 500);
 setTimeout(close, 1000);
     function close(){
     document.getElementById('1').className += ' hide';
-    }*/
+    }
+*/
 
 //score counter
 var a = 0;
